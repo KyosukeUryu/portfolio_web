@@ -13,5 +13,20 @@ body {
   background: url('../images/bg.jpg') fixed left bottom;
   background-size: cover;
   font-family: 'Candal', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background-color: #f0f7f3;
 }
 /* ここまで初期設定 */
+.header {
+  padding: 120px 30px 80px;
+}
+.site-title-sub {
+  font-size: 3.2rem;
+  margin-bottom: 80px;
+}
+.site-title {
+  font-size: 6.4rem;
+  margin-bottom: 80px;
+}
+.site-description {
+  font-size: 2.5rem;
+}
