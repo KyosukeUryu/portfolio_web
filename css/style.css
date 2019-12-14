@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #333;
+  background: url('../images/bg.jpg') fixed left bottom;
+  background-size: cover;
+  font-family: 'Candal', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+/* ここまで初期設定 */
