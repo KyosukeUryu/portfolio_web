@@ -62,6 +62,7 @@ body {
   text-decoration: none;
   font-size: 2.3rem;
   color: #355242;
+  line-height: 1;
 }
 .button:hover {
   opacity: 0.8;
@@ -138,8 +139,8 @@ body {
   background-color: #333;
 }
 .announce {
+  margin-bottom: 50px;
   letter-spacing: 2px;
-  padding-bottom: 50px;
 }
 .works-contents {
   width: 70%;
@@ -164,11 +165,11 @@ body {
   opacity: 0.8;
 }
 .work-link::after {
-  content: 'Coming soon';
+  content: 'Coming soon!';
   opacity: 0;
   position: absolute;
   display: block;
-  top: -150%;
+  top: -100%;
   left: 33%;
   padding: 8px;
   border: solid 3px #f59342;
@@ -177,7 +178,7 @@ body {
   border-radius: 10%;
   color: #f59342;
   background-color: #333;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .work-link:hover::after {
   opacity: 1;
@@ -193,16 +194,35 @@ body {
   transition: transform 0.3s;
   transform-origin:left bottom;
 }
-/* .work-image:hover {
-  transform: scale(1.2);
-} */
-/* .work-box::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+/* ここまでworksセクション */
+.skill {
   width: 100%;
-  height: 427px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius:  10px;
-} */
+  background-color: #333;
+  color: #fff;
+}
+.skill-blocks {
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+.skill-box {
+  display: table-cell;
+}
+.skill-icon {
+  font-size: 5rem;
+  padding: 40px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+.skill-box:hover .skill-icon {
+  transform: rotate(360deg);
+}
+.skill-text {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  padding: 20px;
+  margin-bottom: 50px;
+}
