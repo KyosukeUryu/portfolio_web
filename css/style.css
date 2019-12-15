@@ -39,7 +39,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 3px solid #573315;
 }
 .site-title::after {
   bottom: -10px;
@@ -54,7 +54,6 @@ body {
 .button {
   display: inline-block;
   padding: 20px;
-  border: 1px solid #333;
   border-radius: 10px;
   background-color: #d5e6dd;
   margin: 30px 60px;
@@ -67,6 +66,18 @@ body {
 .button:hover {
   opacity: 0.8;
   box-shadow: 0 0 12px -1px rgba(0, 0, 0, 0.7);
+}
+.button.button-work {
+  background-color: #f5c69f;
+  color: #d9721c;
+}
+.button.button-skill {
+  background-color: #d6e7ff;
+  color: #4597f5;
+}
+.button.button-contact {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
 .arrow {
   margin: 80px;
@@ -225,4 +236,50 @@ body {
   line-height: 2;
   padding: 20px;
   margin-bottom: 50px;
+}
+.contact-form {
+  width: 60%;
+  margin: 80px auto 20px;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  display: block;
+  width: 40%;
+  margin: 0 auto 20px;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+.contact-form textarea {
+  width: 70%;
+  height: 160px;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.contact-form input[type=submit]:hover {
+  opacity: 0.8;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  margin-top: 180px;
+}
+.footer p {
+  padding: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: normal;
 }
