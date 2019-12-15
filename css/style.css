@@ -2,6 +2,7 @@
 
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 *, *::after, *::before {
   box-sizing: border-box;
@@ -282,4 +283,63 @@ body {
   font-size: 1.3rem;
   letter-spacing: 2px;
   font-weight: normal;
+}
+/* ここまでpc向け */
+@media (max-width: 768px) {
+  .site-title-sub {
+    font-size: 1.8rem;
+  }
+  .site-title {
+    font-size: 3rem;
+  }
+  .site-title::before {
+    bottom: 90px;
+  }
+  .site-title::after {
+    bottom: -15px;
+  }
+  .site-description {
+    font-size: 1.8rem;
+  }
+  .button {
+    margin: 20px auto;
+    display: block;
+  }
+  .arrow {
+    margin: auto;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .heading::before,
+  .heading::after {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+  }
+  .about-text {
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+  .skill-box {
+    display: block;
+  }
+  .skill-icon {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .skill-text {
+    font-size: 1.3rem;
+  }
+  .contact-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-form input[type=text],
+  .contact-form textarea {
+    width: 100%;
+  }
+  .footer {
+    margin-top: 30px;
+  }
 }
