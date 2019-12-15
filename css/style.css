@@ -242,6 +242,12 @@ body {
   width: 60%;
   margin: 80px auto 20px;
 }
+.alert-text {
+  font-size: 1.5rem;
+  color: #fc1e17;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
 .contact-form input[type=text],
 .contact-form textarea {
   display: block;
